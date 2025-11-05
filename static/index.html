@@ -33,7 +33,7 @@
             formData.append("file", fileInput.files[0]);
 
             // 非同期リクエストを送信
-            const response = await fetch("http://localhost:8000/process-image", {
+            const response = await fetch("/process-image", {
                 method:"POST",
                 body: formData
             });
